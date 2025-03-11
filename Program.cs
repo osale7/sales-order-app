@@ -223,7 +223,6 @@ class Program
             Payment payment = new Payment(paymentMethod, selectedProduct.Price * orderQuantity);
             payment.ProcessPayment();
 
-            // Separator before updating stock
             Console.WriteLine("--------------------");
 
             Console.WriteLine("Updated Stock:");
@@ -232,7 +231,6 @@ class Program
                 products[i].PrintProduct();
             }
 
-            // Ask if the user wants to place another order with colored options
             Console.Write("Do you want to place another order? (");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("yes");
